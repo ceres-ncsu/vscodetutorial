@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Welcome to CSC 111</title>
+    <link>https://JialiangTan.github.io/vscodetutorial/post/</link>
+    <description>Recent content in Posts on Welcome to CSC 111</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://JialiangTan.github.io/vscodetutorial/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial 1: Getting Started with Visual Studio Code</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/installation/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/installation/</guid>
+      <description>In this tutorial, we will walk you through the installation of Visual Studio Code.
+Step 1. Install Visual Studio Code Goto VS Code releases, download the appropriate version for your os and archietecture.
+ Download Windows if your os is Windows 8, 10, 11 Download Mac if your os is macOX 10.11+  Open the installer you just download, it will install Visual Studio Code for you by default. After installation finish, you will find the VS Code Application on your Desktop/Lauchpad.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 2: Download and Install Python (macOS)</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/pythoninstall/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/pythoninstall/</guid>
+      <description>In this tutorial, you will learn how to download and install Python on macOS.
+Step 1: Check Python First step we need to check if Python is already installed on your laptop. If you are working on a cluster, skip this step, we have taken care of everything.
+We can check it via terminal. First, on your VS Code, click Terminal &amp;gt; New Terminal from top menu to open a new terminal: Below red box is the new terminal we just opened.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 2: Download and Install Python (Windows)</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/installwindows/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/installwindows/</guid>
+      <description>In this tutorial, you will learn how to download and install Python on Windows.
+Step 1: Download Python Quick Link: click HERE to download Python 3.10.5 for Windows(64-bit)
+Or, visit Python Homepage python.org, Downloads &amp;gt; Windows to visit the download page for Windows: Step 2: Install Python Launch python-3.10.5-amd64.exe that you just downloaded in Step 1.
+Click Next to start installation: Until the last step: When the installation is done, it will lauch VS Code automatically.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 3: Set up Python Environment (macOS)</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/pythonenv/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/pythonenv/</guid>
+      <description>In this tutorial, you will set up a Python environment in Visual Studio Code. The Microsoft Python extension will be introduced, through using the Python extension, you make VS Code into a great lightweight Python IDE.
+Step 1: Install the Python Extension Let&amp;rsquo;s open VS Code.
+First, you click the Extension button on the left menu to open the Visual Studio Marketplace.
+In the Marketplace, search Python.
+You will see tons of Python-related extensions, here we want to install the one developed by Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 3: Set up Python Environment (Windows)</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/envwindows/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/envwindows/</guid>
+      <description>In this tutorial, you will set up a Python environment in Visual Studio Code. The Microsoft Python extension will be introduced, through using the Python extension, you make VS Code into a great lightweight Python IDE.
+Step 1: Install the Python Extension Let&amp;rsquo;s open VS Code.
+First, you click the Extension button on the left menu to open the Visual Studio Marketplace.
+In the Marketplace, search Python.
+You will see tons of Python-related extensions, here we want to install the one developed by Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 4: Run Python Hello World</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/pythonhelloworld/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/pythonhelloworld/</guid>
+      <description>Step 1: Create Python Hello World Source Code File Remember the step 4 in Tutorial 1, how we open a folder. By starting VS Code in a folder, that folder becomes your workspace.
+Here we create a new foler under Desktop: We name the folder as hello and open it (the hello folder is your workplace): Then we select New File button create a new file in hello folder, name it hello.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 5: Jupyter Notebooks on VS Code</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/jupyter/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/jupyter/</guid>
+      <description>Jupyter Notebooks is an open-source project that combines Markdown text and executable Python source code on one canvas.
+In Tutorial 3 we lhave earn how to set up Python enviroment. Once the appropriate environment is activated, we can create and open a Jupyter Notebook.
+Step 1: Install Jupyter Notebook Extension Search Jupyter in extension marketplace:
+Make sure it is developed by Microsoft, install it. Step 2: Create or Open a Jupyter Notebook Open the Command Palete in top menu View &amp;gt; Command Palette:</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 6: Install and Use Packages</title>
+      <link>https://JialiangTan.github.io/vscodetutorial/post/packageinstall/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://JialiangTan.github.io/vscodetutorial/post/packageinstall/</guid>
+      <description>In Python, packages are how you obtain any number of useful code libraries, typically from the Python Package Index (PyPI). Here we show an example that&amp;rsquo;s a little more complicated, where you use the matplotlib and numpy packages to create a graphical plot as is commonly done with data science.
+First, let&amp;rsquo;s create a new file called plot.py, and paste in the following source code:
+import matplotlib.pyplot as plt import numpy as np x = np.</description>
+    </item>
+    
+  </channel>
+</rss>

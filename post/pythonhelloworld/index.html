@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tutorial 4: Run Python Hello World</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://JialiangTan.github.io/vscodetutorial/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.97.3" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Tutorial 4: Run Python Hello World</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/">Home</a></li>
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/about/">About</a></li>
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/post/">Tutorials</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jtan02@email.wm.edu"><i class="fas fa-envelope"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Tutorial 4: Run Python Hello World</h2>
+        <h5>May 20, 2022</h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="step-1-create-python-hello-world-source-code-file">Step 1: Create Python Hello World Source Code File</h2>
+<p>Remember the step 4 in Tutorial 1, how we open a folder. By starting VS Code in a folder, that folder becomes your <code>workspace</code>.</p>
+<p>Here we create a new foler under Desktop:
+<img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/hellofolder1.png" alt="hellofolder"></p>
+<p>We name the folder as <code>hello</code> and open it (the <code>hello</code> folder is your workplace):
+<img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/hellofolder2.png" alt="hellofolder"></p>
+<p>Then we select <code>New File</code> button create a new file in hello folder, name it <code>hello.py</code>, and it automatically opens in the editor:
+<img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/hellofolder3.png" alt="hellofolder"></p>
+<p>By using th <code>.py</code> file extension, you tell VS Code to interpret this file as a Python program, so that it evaluates the contents with the Python extension and selected Python interpreter.</p>
+<p>Let&rsquo;s try to print a messgae in <code>hello.py</code>:</p>
+<pre tabindex="0"><code>msg = &#34;Hello World&#34;
+print(msg)
+</code></pre><p>When you start typing <code>print</code> or <code>msg</code>, notice how <a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSence</a> from Python Extension presents auto-completion options.</p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/auto1.png" alt="auto"></p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/auto2.png" alt="auto"></p>
+<p>It works for standard Python modules and other packages you have installed into the environment of the selected Python interpreter. It also provides completions for methods available on object types, we will learn that from future class.</p>
+<h2 id="step-2-run-python-hello-world">Step 2: Run Python Hello World</h2>
+<p>To run the <code>hello.py</code>, just click the <code>Run Python File</code> button in the top-right side of editor.
+<img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/run1.png" alt="run"></p>
+<p>The button opens a terminal panel in which your Python interpreter is automatically activated, then runs <code>python3 hello.py</code> (macOS.Linux) or <code>python hello.py</code>(Windows):</p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/run2.png" alt="run"></p>
+<p><code>Hello World!</code></p>
+</div>
+
+    
+    
+    
+
+    
+    
+        <h4 class="page-header">Comments</h4>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted"></p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

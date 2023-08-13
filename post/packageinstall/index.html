@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tutorial 6: Install and Use Packages</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://JialiangTan.github.io/vscodetutorial/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.97.3" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Tutorial 6: Install and Use Packages</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/">Home</a></li>
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/about/">About</a></li>
+                            
+                                <li><a href="https://JialiangTan.github.io/vscodetutorial/post/">Tutorials</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jtan02@email.wm.edu"><i class="fas fa-envelope"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Tutorial 6: Install and Use Packages</h2>
+        <h5>May 20, 2022</h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><p>In Python, packages are how you obtain any number of useful code libraries, typically from the Python Package Index (<a href="https://pypi.org/">PyPI</a>). Here we show an example that&rsquo;s a little more complicated, where you use the <code>matplotlib</code> and <code>numpy</code> packages to create a graphical plot as is commonly done with data science.</p>
+<p>First, let&rsquo;s create a new file called <code>plot.py</code>, and paste in the following source code:</p>
+<pre tabindex="0"><code>import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 20, 100)  # Create a list of evenly-spaced numbers over the range
+plt.plot(x, np.sin(x))       # Plot the sine of each x point
+plt.show()                   # Display the plot
+</code></pre><p>Next, let&rsquo;s try to run the file.
+You will see the <code>ModuleNotFoundError</code> message (unless you have previously installed the <code>matlpotlib</code>):</p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/moduleerror.png" alt="package">
+Such message indicates that the <code>matplotlib</code> package is not available in your system.</p>
+<h2 id="install-matplotlib-and-numpy">Install Matplotlib and Numpy</h2>
+<p>To install the <code>matplotlib</code> package (which also installs <code>numpy</code> as a dependency), stop the debugger and open terminal (<code>Terminal -&gt; New Terminal</code>).</p>
+<h4 id="1-make-sure-you-are-using-the-correct-python3">1. Make sure you are using the correct Python3:</h4>
+<p>In terminal, check your current Python3 path by typing the following command:</p>
+<pre tabindex="0"><code>$ which python3
+</code></pre><p>The current valid Python3 path will pop out on your terminal. In my case, the Python3 path in current workspace is <code>/usr/local/bin/python3</code>:
+<img src="https://JialiangTan.github.io/vscodetutorial/images/packages/which.png" alt="package"></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Remember how we select Python interpreter in Tutorial 3: <code>View -&gt; Command Palette -&gt; Python: Select Interpreter</code>:</p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/interpreter4.png" alt="interpreter"></p>
+<p>Make sure the path of selected Python is the same as the path printed in your terminal.</p>
+<p>For example, I have selected <code>Python 3.10.4</code> from my Command Palette, and we can see the path of Python 3.10.4 is <code>/usr/local/bin/python3</code>, which is consistent with the path printed on my terminal.</p>
+<p>If paths are inconsitent, you may want to <code>Select Python Interpreter</code> again (see Tutorial 3 for more details).</p>
+<h4 id="2-install-the-package">2. Install the package</h4>
+<p>In your terminal, type the following command to install <code>matplotlib</code>:</p>
+<pre tabindex="0"><code>python3 -m pip install matplotlib
+</code></pre><p>Upon installation, you should see the message: <code>Successfully installed matplotlib-3.x.x</code>.</p>
+<h4 id="3-rerun-the-program">3. Rerun the program</h4>
+<p>Rerun the <code>plot.py</code> now, after a few seconds a plot window appears with the output:</p>
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/plot.png" alt="package"></p>
+<p>The appearance of the plot results indicates that you&rsquo;ve succesfully install the <code>matlpotlib</code> and <code>numpy</code> packages!</p>
+<h2 id="install-scipy-and-pandas">Install SciPy and Pandas</h2>
+<p>Similarly, type the following command to install <code>scipy</code> and <code>pandas</code> in your terminal:</p>
+<pre tabindex="0"><code>python3 -m pip install scipy
+</code></pre><pre tabindex="0"><code>python3 -m pip install pandas
+</code></pre><p>You will see following messages: <code>Successfully installed scipy-1.9.x</code> and <code>Successfully installed pandas-1.5.x</code> upon the successful installations.
+<img src="https://JialiangTan.github.io/vscodetutorial/images/packages/scipy.png" alt="package"></p>
+<!-- raw HTML omitted -->
+<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/pandas.png" alt="package"></p>
+<p>!!!Note: the <code>pip</code> command can be used to install packages from PyPI, check <a href="https://pypi.org/">PyPI website</a> for more interesting package/software developed and shared by the Python community.</p>
+<pre tabindex="0"><code>python3 -m pip install &#34;ThePackageName&#34;
+</code></pre><p>Or, simply try:</p>
+<pre tabindex="0"><code>pip install &#34;ThePackageName&#34;
+</code></pre></div>
+
+    
+    
+    
+
+    
+    
+        <h4 class="page-header">Comments</h4>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted"></p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
