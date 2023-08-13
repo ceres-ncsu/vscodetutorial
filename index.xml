@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to CSC 111 VS Code Tutorial</title>
+    <title>Welcome to CSC 111</title>
     <link>https://ceres-ncsu.github.io/vscodetutorial/</link>
-    <description>Recent content on Welcome to CSC 111 VS Code Tutorial</description>
+    <description>Recent content on Welcome to CSC 111</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ceres-ncsu.github.io/vscodetutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
