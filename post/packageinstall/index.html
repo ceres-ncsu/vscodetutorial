@@ -22,7 +22,7 @@
 </style>
 
 
-<link rel="stylesheet" href="https://JialiangTan.github.io/vscodetutorial/css/main.css">
+<link rel="stylesheet" href="https://ceres-ncsu.github.io/vscodetutorial/css/main.css">
 
 
 
@@ -96,18 +96,18 @@
                     
                         <ul class="nav navbar-nav">
                             
-                                <li><a href="https://JialiangTan.github.io/vscodetutorial/">Home</a></li>
+                                <li><a href="https://ceres-ncsu.github.io/vscodetutorial/">Home</a></li>
                             
-                                <li><a href="https://JialiangTan.github.io/vscodetutorial/about/">About</a></li>
+                                <li><a href="https://ceres-ncsu.github.io/vscodetutorial/about/">About</a></li>
                             
-                                <li><a href="https://JialiangTan.github.io/vscodetutorial/post/">Tutorials</a></li>
+                                <li><a href="https://ceres-ncsu.github.io/vscodetutorial/post/">Tutorials</a></li>
                             
                         </ul>
                     
                     
                         <ul class="nav navbar-nav navbar-right">
                             
-                                <li class="navbar-icon"><a href="mailto:jtan02@email.wm.edu"><i class="fas fa-envelope"></i></a></li>
+                                <li class="navbar-icon"><a href="mailto:sjiao2@ncsu.edu"><i class="fas fa-envelope"></i></a></li>
                             
                         </ul>
                     
@@ -135,7 +135,7 @@ plt.plot(x, np.sin(x))       # Plot the sine of each x point
 plt.show()                   # Display the plot
 </code></pre><p>Next, let&rsquo;s try to run the file.
 You will see the <code>ModuleNotFoundError</code> message (unless you have previously installed the <code>matlpotlib</code>):</p>
-<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/moduleerror.png" alt="package">
+<p><img src="https://ceres-ncsu.github.io/vscodetutorial/images/packages/moduleerror.png" alt="package">
 Such message indicates that the <code>matplotlib</code> package is not available in your system.</p>
 <h2 id="install-matplotlib-and-numpy">Install Matplotlib and Numpy</h2>
 <p>To install the <code>matplotlib</code> package (which also installs <code>numpy</code> as a dependency), stop the debugger and open terminal (<code>Terminal -&gt; New Terminal</code>).</p>
@@ -143,11 +143,11 @@ Such message indicates that the <code>matplotlib</code> package is not available
 <p>In terminal, check your current Python3 path by typing the following command:</p>
 <pre tabindex="0"><code>$ which python3
 </code></pre><p>The current valid Python3 path will pop out on your terminal. In my case, the Python3 path in current workspace is <code>/usr/local/bin/python3</code>:
-<img src="https://JialiangTan.github.io/vscodetutorial/images/packages/which.png" alt="package"></p>
+<img src="https://ceres-ncsu.github.io/vscodetutorial/images/packages/which.png" alt="package"></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <p>Remember how we select Python interpreter in Tutorial 3: <code>View -&gt; Command Palette -&gt; Python: Select Interpreter</code>:</p>
-<p><img src="https://JialiangTan.github.io/vscodetutorial/images/pythonhelloworld/interpreter4.png" alt="interpreter"></p>
+<p><img src="https://ceres-ncsu.github.io/vscodetutorial/images/pythonhelloworld/interpreter4.png" alt="interpreter"></p>
 <p>Make sure the path of selected Python is the same as the path printed in your terminal.</p>
 <p>For example, I have selected <code>Python 3.10.4</code> from my Command Palette, and we can see the path of Python 3.10.4 is <code>/usr/local/bin/python3</code>, which is consistent with the path printed on my terminal.</p>
 <p>If paths are inconsitent, you may want to <code>Select Python Interpreter</code> again (see Tutorial 3 for more details).</p>
@@ -157,16 +157,16 @@ Such message indicates that the <code>matplotlib</code> package is not available
 </code></pre><p>Upon installation, you should see the message: <code>Successfully installed matplotlib-3.x.x</code>.</p>
 <h4 id="3-rerun-the-program">3. Rerun the program</h4>
 <p>Rerun the <code>plot.py</code> now, after a few seconds a plot window appears with the output:</p>
-<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/plot.png" alt="package"></p>
+<p><img src="https://ceres-ncsu.github.io/vscodetutorial/images/packages/plot.png" alt="package"></p>
 <p>The appearance of the plot results indicates that you&rsquo;ve succesfully install the <code>matlpotlib</code> and <code>numpy</code> packages!</p>
 <h2 id="install-scipy-and-pandas">Install SciPy and Pandas</h2>
 <p>Similarly, type the following command to install <code>scipy</code> and <code>pandas</code> in your terminal:</p>
 <pre tabindex="0"><code>python3 -m pip install scipy
 </code></pre><pre tabindex="0"><code>python3 -m pip install pandas
 </code></pre><p>You will see following messages: <code>Successfully installed scipy-1.9.x</code> and <code>Successfully installed pandas-1.5.x</code> upon the successful installations.
-<img src="https://JialiangTan.github.io/vscodetutorial/images/packages/scipy.png" alt="package"></p>
+<img src="https://ceres-ncsu.github.io/vscodetutorial/images/packages/scipy.png" alt="package"></p>
 <!-- raw HTML omitted -->
-<p><img src="https://JialiangTan.github.io/vscodetutorial/images/packages/pandas.png" alt="package"></p>
+<p><img src="https://ceres-ncsu.github.io/vscodetutorial/images/packages/pandas.png" alt="package"></p>
 <p>!!!Note: the <code>pip</code> command can be used to install packages from PyPI, check <a href="https://pypi.org/">PyPI website</a> for more interesting package/software developed and shared by the Python community.</p>
 <pre tabindex="0"><code>python3 -m pip install &#34;ThePackageName&#34;
 </code></pre><p>Or, simply try:</p>
